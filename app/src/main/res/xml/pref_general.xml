@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.tsm_messenger.activities.options.NumberPickerPreference
+        android:defaultValue="2"
+        android:key="vibrate_silent_time"
+        android:title="@string/pref_title_vibrate_silent" />
+
+    <com.tsm_messenger.activities.options.NumberPickerPreference
+        xmlns:additional="http://schemas.android.com/apk/res-auto"
+        android:defaultValue="10"
+        android:key="privatekey_show_time"
+        android:title="@string/pref_title_privatekey_show_time"
+        additional:maxValue="60"
+        additional:minValue="2"/>
+
+    <Preference
+        android:defaultValue="@string/config_download_folder"
+        android:key="download_file_folder"
+        android:title="@string/pref_title_download_folder" />
+
+</PreferenceScreen>

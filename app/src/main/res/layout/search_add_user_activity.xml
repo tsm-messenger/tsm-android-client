@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tsm_messenger.activities.main.contacts.ChooseContactsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingLeft="@android:dimen/app_icon_size"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            </android.support.v7.widget.Toolbar>
+
+            <ImageButton
+                android:id="@+id/btnBack_toolbar"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <TextView
+        android:id="@+id/lblTitle_dialog"
+        style="@style/h1"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/h1_height"
+        android:text="@string/title_add_contact"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/tbLogin"
+        style="@style/textBox"
+        android:layout_marginBottom="@dimen/view_min_margin"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                abcdefghijklmnopqrstuvwxyz0123456789-_ "
+        android:hint="@string/hint_contact_login"
+        android:inputType="textNoSuggestions"
+        android:maxLength="60" />
+
+    <EditText
+        android:id="@+id/tbName"
+        style="@style/textBox"
+        android:layout_marginBottom="@dimen/view_min_margin"
+        android:hint="@string/hint_contact_name"
+        android:maxLength="60" />
+
+    <TextView
+        android:id="@+id/horisontalSeparator_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/grey"/>
+
+
+
+</LinearLayout>

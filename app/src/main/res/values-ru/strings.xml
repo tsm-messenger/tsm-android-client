@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--application-specific identifiers-->
+    <string name="app_name">TSM</string>
+
+    <!--Menu items-->
+    <string name="action_settings">Настройки</string>
+    <string name="action_info">Информация</string>
+
+    <!--labels-->
+    <string name="lbl_check_password">Показать пароль</string>
+    <string name="lbl_new_contact">Новый контакт</string>
+    <string name="lbl_login">Логин</string>
+    <string name="lbl_progress_wait">Подождите, пожалуйста</string>
+    <string name="btn_register">Зарегистрироваться</string>
+    <string name="btn_add_to_contacts">Добавить в контакты</string>
+    <string name="lbl_unread_messages">новые сообщения</string>
+    <string name="lbl_internal_memory">Внутренняя память</string>
+    <string name="hint_enter_login">Логин</string>
+    <string name="hint_enter_password">Личный пароль</string>
+    <string name="hint_contact_name">Имя контакта</string>
+    <string name="hint_write_message">Напишите сообщение</string>
+
+    <!--button names-->
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_category_all">Все</string>
+    <string name="btn_category_confirm">Подтверждения</string>
+    <string name="btn_category_confirm_in">Входящие запросы</string>
+    <string name="btn_category_confirm_out">Исходящие запросы</string>
+    <string name="btn_category_confirm_wait">Контакты, которым можно отправить запрос</string>
+    <string name="btn_category_invitation_ready">Приглашенные</string>
+    <string name="btn_category_invitation_todo">Пригласить</string>
+    <string name="btn_category_messenger">Приложение</string>
+    <string name="btn_chats">Разговоры</string>
+    <string name="btn_contacts">Контакты</string>
+    <string name="title_remove_from_contacts">Убрать из контактов</string>
+    <string name="btn_leave_chat">Покинуть чат</string>
+    <string name="btn_not_to_share">Не разрешать</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_request_contact">Запросить контакт</string>
+    <string name="btn_share">Разрешить</string>
+    <string name="btn_login">Войти</string>
+    <string name="btn_close_tsm">Закрыть TSM</string>
+    <string name="btn_import_now">Импортировать</string>
+    <string name="btn_not_import">Не импортировать</string>
+    <string name="title_error">ОШИБКА</string>
+    <string name="title_invalid_password">Неверный пароль</string>
+    <string name="title_rename">Переименовать</string>
+    <string name="title_scan_error">Ошибка сканирования!</string>
+    <string name="title_app_locked">TSM заблокирован</string>
+    <string name="title_export">Личный ключ экспортирован</string>
+    <string name="title_import">Импортировать личный ключ </string>
+    <string name="title_success">Успех</string>
+    <string name="lbl_accept_term_of_use">Принять </string>
+    <string name="lbl_term_of_use">Вы должны принять <u><font color='blue'> Условия использования</font></u> для дальнейшего использования TSM</string>
+
+    <!--info messages-->
+    <string name="info_asks_share_contacts">предлагает Вам обменяться контактами</string>
+    <string name="info_user_capital">Пользователь</string>
+    <string name="info_operation_done_success">Операция успешно завершена.</string>
+
+    <string name="error_empty_name_field">Поле "Логин" должно быть заполнено.</string>
+    <string name="error_group_chat_member_count">Пожалуйста, выберите более одного пользователя.</string>
+    <string name="error_login_owner">Вы не можете использовать собственный логин</string>
+    <string name="error_request_member_count">Необходимо выбрать контакт для запроса.</string>
+    <string name="error_group_member_limit">В групповом чате может быть только %d контактов</string>
+    <string name="error_invalid_login">Введенный логин должен содержать только латинские буквы и цифры, символы "-", "_" и пробелы. Его длина должна составлять от 3 до 30 символов.</string>
+    <string name="error_login_already_exists">Такой логин уже существует.</string>
+    <string name="error_password_properties">Ваш пароль должен содержать:\n
+        - от 8 до 20 символов;\n
+        - не менее одной строчной буквы, одной прописной буквы и одной цифры;\n
+        - не должен содержать пробелов.</string>
+    <string name="error_password_problems">Исправьте следующие ошибки:</string>
+    <string name="error_password_invalid_length">– приведите пароль к длине от 8 до 20 символов</string>
+    <string name="error_password_no_lowercase_found">– введите не менее одной строчной буквы</string>
+    <string name="error_password_no_uppercase_found">– введите не менее одной прописной буквы</string>
+    <string name="error_password_no_digit_found">– введите не менее одной цифры</string>
+    <string name="error_password_space_symbol_found">– удалите все пробелы</string>
+    <string name="error_password_validate">Вы ввели неверный пароль!\nЕсли неверный пароль будет введен 10 раз подряд, приложение будет заблокировано на некоторое время.\nУ вас осталось %s, чтобы ввести правильный пароль.</string>
+    <string name="error_qr_scan">Ошибка сканирования QR-кода!\nЕсли неверный QR-код будет отсканирован 3 раза подряд, приложение будет заблокировано на некоторое время.\nУ вас осталось %d попыток, чтобы отсканировать правильный QR-код.</string>
+    <string name="error_app_becomes_locked">Приложение заблокировано!\n\nВы не сможете использовать TSM в течение минуты. Пожалуйста, подождите.</string>
+    <string name="error_smth_wrong">К сожалению, произошла ошибка обработки. Попробуйте еще раз.</string>
+    <string name="error_user_not_registered_notary">К сожалению, данный контакт не может быть добавлен в вашу адресную книгу. Возможно, данный пользователь не зарегистрирован на Notary Server, или ещё не регистрировал TSM.</string>
+    <string name="error_access_denied">Доступ запрещен</string>
+    <string name="error_app_locked">К сожалению, приложение не может быть запущено сейчас. Оно будет разблокировано в течение минуты. Пожалуйста, подожите.</string>
+    <string name="error_import_file_read">При чтении ключа из файла произошла ошибка. Повторить?</string>
+    <string name="error_notary_unavailable">К сожалению, Notary Server сейчас недоступен. Пожалуйста, попробуйте позже.</string>
+    <string name="error_transact_processing">К сожалению, произошла ошибка при обработке Вашего запроса. Пожалуйста, попробуйте еще раз.</string>
+    <string name="error_user_private_key_invalid">Извините, ваш личный ключ пользователя уже сгенерирован. Пожалуйста, импортируйте его в приложение.</string>
+    <string name="error_low_version">Ваша версия TSM устарела. Пожалуйста, обновите приложение и попробуйте еще раз.</string>
+    <string name="error_too_many_participants">Превышен лимит участников группового чата.</string>
+    <string name="error_chat_has_not_have_history">У этого чата нет истории.</string>
+
+    <!--notifications-->
+    <string name="notification_connection_lost">Соединение с сервером потеряно</string>
+    <string name="notification_new_contact_request">У вас есть новые запросы на обмен контактами</string>
+    <string name="notification_new_inform">Контакт установил TSM</string>
+    <string name="notification_new_messages">Вам пришли сообщения</string>
+    <string name="notification_new_messages_in_some_chats">Вам пришли сообщения</string>
+    <string name="notification_message_queue">Ожидание ответа от сервера.</string>
+    <string name="notification_title_connection">соединение</string>
+    <string name="notification_title_inform">Информация</string>
+    <string name="notification_title_new_messages">Сообщение</string>
+    <string name="notification_title_queue">Очередь сообщений</string>
+    <string name="notification_title_request">Запрос контактов</string>
+    <string name="lbl_version">Версия</string>
+    <string name="lbl_qr_code">QR-код</string>
+    <string name="lbl_text_file">Текстовый файл</string>
+    <string name="title_choose_export_mode">Выберите формат экспорта</string>
+    <string name="title_choose_import_mode">Выберите формат импорта</string>
+    <string name="info_import_canceled">Операция импорта была отменена. Повторить?</string>
+    <string name="error_import_scan">При чтении ключа из QR-кода произошла ошибка. Повторить?</string>
+    <string name="error_keystore_locked">К сожалению, хранилище ключей Android заблокировано или не инициализировано. TSM необходимо разблокированное хранилища ключей для безопасного сохранения данных.\nЧтобы активировать хранилище данных, установите параметр "Способ блокировки экрана" в значение "Графический ключ", "PIN-код", или "Пароль".\nПосле разблокировки хранилища ключей TSM можно будет запустить. </string>
+    <string name="btn_reset_keystore">Сбросить хранилище ключей</string>
+    <string name="btn_unlock_keystore">Разблокировать хранилище ключей</string>
+
+    <!--unsorted-->
+    <string name="lbl_attempt_1">попытка</string>
+    <string name="lbl_attempt_2_4">попытки</string>
+    <string name="lbl_attempt_default">попыток</string>
+    <string name="lbl_remaining_1">осталась</string>
+    <string name="lbl_remaining_default">осталось</string>
+    <string name="btn_add_participants">Добавить участников</string>
+    <string name="title_keystore_locked">Android Keystore заблокировано</string>
+    <string name="error_login_outdated">К сожалению, активные пользователи с такими данными не найдены. Пожалуйста, проверьте логин, который вы ввели.</string>
+    <string name="error_add_no_participants">К сожалению, вы не можете добавить участников к этому чату.</string>
+    <string name="error_leave_chat_offline">Вы не можете покинуть чат в оффлайн-режиме. Пожалуйста, подсоедините ваше устройство к сети Интернет.</string>
+    <string name="info_user_left">покинул чат</string>
+    <string name="info_import_lost_key">К сожалению, ваш личный ключ пользователя не найден в хранилище Android. Пожалуйста, импортируйте его заново, используя свой обычный пароль.</string>
+    <string name="info_import_success">Зашифрованный личный ключ пользователя успешно импортирован.</string>
+    <string name="error_chat_not_recognized_yet">Информация про данный чат еще не загружена</string>
+    <string name="info_user_key_not_exist_at_transact">Ваш личный ключ не зарегистрирован на сервере. Новый ключ будет сгенерирован и экспортирован в файл.</string>
+    <string name="pref_title_vibrate_silent">Минимальный период между сигналами вибрации (с)</string>
+    <string name="btn_no">Нет</string>
+    <string name="btn_yes">Да</string>
+    <string name="title_add_contact">Добавить контакт</string>
+    <string name="action_send_file_offline">Отправить файл оффлайн</string>
+    <string name="action_send_file_online">Отправить файл онлайн</string>
+    <string name="action_export_user_key">Экспортировать личный ключ</string>
+    <string name="error_chat_unreachable">Ни у кого из участников нет свободных ключей для шифрования сообщений.</string>
+    <string name="error_file_download">Файл поврежден. Загрузка невозможна.</string>
+    <string name="error_participant_offline">К сожалению, этот пользователь сейчас не в сети, и не может получить файл в онлайн-режиме. Пожалуйста, используйте оффлайн-режим передачи.</string>
+    <string name="error_user_unreachable">У собеседника нет свободных ключей для шифрования сообщений.</string>
+    <string name="info_file_receive">Новый файл от %1$s \nИмя файла: %2$s \nРазмер файла: %3$s</string>
+    <string name="info_file_received">Файл  %1$s  от   %2$s  загружен. </string>
+    <string name="notification_file">Файл сохранен.</string>
+    <string name="notification_title_file">Передача файла</string>
+    <string name="pref_title_download_folder">Папка для загрузки файлов</string>
+    <string name="pref_title_privatekey_show_time">Время показа личного ключа (с)</string>
+    <string name="title_file_incoming">Получить файл?</string>
+    <string name="info_history_loaded">История чата загружена</string>
+    <string name="info_history_will_load">История чата скоро будет загружена</string>
+
+    <string name="error_too_few_parameter">Вы не можете писать сообщения в этот чат.</string>
+    <string name="error_request_not_found">Вы уже ответили на этот запрос с другого устройства.</string>
+    <string name="error_user_already_online">Ваш аккаунт уже подсоединен к серверу с другого устройства.</string>
+
+    <string name="title_user_key">Личный ключ </string>
+    <string name="info_userkey_show_time">Личный ключ показан на %d секунд</string>
+    <string name="lbl_byte">Б</string>
+    <string name="lbl_kbyte">КБ</string>
+    <string name="lbl_gbyte">ГБ</string>
+    <string name="lbl_mbyte">МБ</string>
+    <string name="lbl_tbyte">ТБ</string>
+    <string name="hint_no_active_participants">Не осталось участников. Добавьте пользователей в чат.</string>
+    <string name="error_chat_create_offline">Извините, вы не можете создавать чаты в оффлайн-режиме</string>
+    <string name="error_file_too_large">К сожалению, данный файл слишком большой для пересылки.</string>
+    <string name="error_file_transfer_offline_session_not_init">К сожалению, сессия еще не начата. Пожалуйста, установите соединение с сервером, чтобы получить ключ сессии.</string>
+
+    <string name="error_file_transfer_empty_file">Sorry, You can not send empty file  </string>
+    <string name="title_file_transfer">File transfer</string>
+    <string name="file_cancel_transfer">Вы действительно хотите отменить передачу файла?</string>
+    <string name="lbl_load_private_key">Загрузить личный ключ</string>
+    <string name="press_back_to_exit">Нажмите "Назад" еще раз, чтобы выйти</string>
+    <string name="title_create_group_chat">Создать чат</string>
+    <string name="title_find">Найти</string>
+    <string name="title_request_contacts">Отправить запрос контактов</string>
+    <string name="hint_contact_login">Логин контакта*</string>
+    <string name="group_name">Укажите имя чата</string>
+    <string name="title_activity_choose_contacts">Выберите контакты</string>
+    <string name="title_activity_contact_info">Информация</string>
+    <string name="chat_info">Информация о чате</string>
+    <string name="title_load_history">Загрузить историю чата</string>
+    <string name="notification_new_answer_accept">%s принял ваш запрос контактов</string>
+    <string name="notification_new_answer_decline">%s отклонил ваш запрос контактов</string>
+    <string name="notification_new_answer_title">Вы получили ответ на свой запрос</string>
+    <string name="notification_new_messages_in_chat">У вас %d сообщений</string>
+    <string name="btn_accept_request">Принять запрос</string>
+    <string name="btn_decline">Отклонить запрос</string>
+    <string name="error_file_transfer_session_init_error">К сожалению, ключ для шифрования файла не был создан. Пожалуйста, попробуйте позже.</string>
+    <string name="lbl_offline">оффлайн</string>
+    <string name="action_send_file">Отправить файл</string>
+    <string name="action_delete_account">Полностью удалить собственный аккаунт</string>
+    <string name="btn_delete_relation">Разорвать дружбу</string>
+    <string name="info_delete_account">Вы действительно хотите полностью удалить свой аккаунт?</string>
+    <string name="info_delete_app_manually">/nПожалуйста, удалите приложение TSM через настройки вашего устройства.</string>
+    <string name="notification_deleterelation_detail">Пользователь %s удалил вас из списка контактов.</string>
+    <string name="notification_deleterelation_title">Вас удалили из списка контактов</string>
+    <string name="notification_messages_sent">Оффлайн-сообщения</string>
+    <string name="notification_new_messages_has_been_sent">Ваше сообщение было отправлено в </string>
+    <string name="title_search">Искать</string>
+    <string name="info_break_relationships">Вы действительно хотите разорвать контакт с %s?</string>
+    <string name="info_request_not_sent_concrete">Запросы контактов не были отправлены %s, так как не было найдено активных приложений.</string>
+    <string name="info_request_sent_concrete">Запрос контактов для %s был успешно отправлен!</string>
+    <string name="message_mask_was_changed">Маска для поиска была изменена. Отправьте запрос заново.</string>
+    <string name="title_break_relationships">Разорвать контакт</string>
+    <string name="title_request_send_error">Ошибка отправки запроса контактов</string>
+    <string name="title_request_sent">Запрос контактов отправлен</string>
+    <string name="title_requests_sent">Запросы контактов отправлены</string>
+    <string name="error_mask_too_short">Пожалуйста, введите не менее 3 символов для поиска пользователей TSM</string>
+    <string name="info_no_users_found">Пользователи не найдены</string>
+    <string name="info_only_lowercase">В логине могут быть только символы нижнего регистра</string>
+    <string name="info_contact_not_connected">Этот человек не отправил вам свои контактные данные.Вы можете запросить его контактные данные и ждать ответа, чтобы начать чат.</string>
+    <string name="info_contact_pending">Этот человек отправил вам запрос контактных данных. Подтвердите или отклоните его.</string>
+    <string name="info_contact_requested">Вы отправили запрос контактных данных этому человеку. Ожидается ответ.</string>
+    <string name="info_contact_unreachable">У этого человека закончились ключи для общения. Подождите, пока пользователь не появится онлайн.</string>
+    <string name="info_remove_from_contacts">Вы действительно хотите удалить этот контакт из адресной книги? Личный чат с ним будет также удален.</string>
+    <string name="info_last_login_other_device">Последнее время логина: %s с другого устройства</string>
+    <string name="info_last_login_own_device">Последнее время логина: %s с этого устройства</string>
+    <string name="sequre_live_time">Максимальное время ожидания для доставки (минут)</string>
+
+    <string-array name="sequretype_array">
+        <item>Хранить историю</item>
+        <item>Онлайн-чат без сохранения сообщений</item>
+        <item>Удалить с сервера после прочтения</item>
+    </string-array>
+
+    <string-array name="timetype_array">
+        <item>Минут</item>
+        <item>Часов</item>
+        <item>Дней</item>
+        <item>Недель</item>
+    </string-array>
+
+    <string name="lbl_securetype_all_history_keep">Хранить всю историю</string>
+    <string name="lbl_securetype_all_history_keep_details">Cообщения отправляются с гарантией доставки. Вы также можете запросить всю историю чата, хранящуюся на сервере в зашифрованном виде. Доступны как онлайн, так и оффлайн режимы передачи файлов.</string>
+    <string name="lbl_securetype_keep_until_delivery">Хранить до получения</string>
+    <string name="lbl_securetype_keep_until_delivery_details">Cообщение будет храниться на сервере для гарантии доставки, но будет стерто сразу после прочтения всеми получателями. Доступен только онлайн-режим передачи файлов.</string>
+    <string name="lbl_securetype_nothing_keep">Ничего не хранить</string>
+    <string name="lbl_securetype_nothing_keep_details">Cообщения будут переданы только собеседникам онлайн и никогда не будут сохраняться на сервере. Доступен только онлайн-режим передачи файлов.</string>
+    <string name="error_chat_member_count">Выберите хотя бы одного пользователя для общения.</string>
+    <string name="title_info">Информация</string>
+    <string name="action_export_user_key_condensed">Экспорт ключа</string>
+    <string name="action_delete_account_condensed">Удалить аккаунт</string>
+    <string name="action_delete_chat">Удалить чат</string>
+    <string name="info_delete_chat">История чата будет польностью уничтожена. Продолжить?</string>
+    <string name="info_delete_chat_leave">Если вы удалите этот чат, вы автоматически его покинете. История чата будет польностью уничтожена. Продолжить?</string>
+    <string name="title_delete_chat">Удалить чат?</string>
+    <string name="info_contact_request_pending">У вас новый запрос контактов</string>
+    <string name="lbl_request_from">запрос от </string>
+    <string name="title_contact_request_pending">Запрос контактов</string>
+    <string name="error_user_already_in_contactbook">Этот пользователь уже внесен в ваш список контактов</string>
+    <string name="lbl_chat">чат</string>
+    <string name="info_exit_file_transfer">Один или более файлов сейчас передаются. Приостановить передачу и выйти?</string>
+    <string name="lbl_empty_chat">пустой чат</string>
+    <string name="title_exit">Выйти из TSM</string>
+    <string name="lbl_securetype_keep_until_lifetime">Хранить до получения (%s)</string>
+    <string name="lbl_securetype_keep_until_lifetime_details">Cообщение будет храниться на сервере в течение %s, но будет стерто сразу после прочтения всеми получателями. Доступен только онлайн-режим передачи файлов.</string>
+    <string name="lbl_sdcard">SD-карта</string>
+    <string name="btn_existing_user">Существующий пользователь</string>
+    <string name="btn_new_user">Новый пользователь</string>
+    <string name="error_sd_locked">SD-карта недоступна для записи на вашей версии Android</string>
+    <string name="info_contact_self_deleted">Этот пользователь удалил свой аккаунт. У вас больше не будет возможности общаться.</string>
+    <string name="info_leave_chat">Вы больше не сможете получать и отправлять сообщения в этом чате. Продолжить?</string>
+    <string name="lbl_chat_setting">Настройки чата</string>
+    <string name="lbl_securetype">Настройки конфиденциальности:</string>
+    <string name="error_offline_reg_impossible">Оффлайн-регистрация невозможна. Пожалуйста, подключитесь к сети Интернет и запустите TSM снова.</string>
+    <string name="lbl_chat_participants">Участники чата:</string>
+    <string name="title_tsm_offline">TSM оффлайн</string>
+    <string name="btn_accept">Принять</string>
+    <string name="you_have">У вас</string>
+    <string name="btn_details">Подробнее</string>
+    <string name="lbl_downloads">Загрузки</string>
+    <string name="lbl_sender">отправитель:</string>
+    <string name="lbl_size">размер:</string>
+    <string name="lbl_open">Открыть</string>
+    <string name="lbl_delete">Удалить</string>
+    <string name="info_file_delete_error">Ошибка удаления. Возможно, файл был заблокирован, перемещен или удален ранее.</string>
+    <string name="info_file_deleted">Файл удален из файловой системы.</string>
+    <string name="error_no_actions">Нет доступных действий</string>
+    <string name="alarm_owner_key">Проверка вашего ключа на сервере провалена!</string>
+    <string name="alarm_participant_key">Проверка ключа участника провалена!</string>
+    <string name="alarm_title">Предупреждение безопасности</string>
+    <string name="error_chat_create_verify_key">К сожалению, вы не можете создать чат с участниками, имеющими непроверенные ключи. Пожалуйста, попробуйте позже.</string>
+    <string name="lbl_new_msgs_in_chat">Новые сообщения в этом чате</string>
+    <string name="lbl_directory_not_exist">Данная папка удалена или недоступна</string>
+    <string name="contact_already_connected">Вы уже знакомы с этим человеком</string>
+    <string name="empty_folder">Пустая папка</string>
+    <string name="file_folder">Папка с файлами</string>
+    <string name="file_select_canceled">Выбор файла отменен</string>
+    <string name="lbl_last_changed">Последнее изменение: %s</string>
+    <string name="btn_next">Далее</string>
+    <string name="info_load_key">Вам необходимо импортировать свой личный ключ.\n\n Он может быть экспортирован из существующего приложения в файл. Вы можете импортировать его, нажав "Загрузить личный ключ" -> "Текстовый файл". \n\n Вы также можете импортировать ключ через QR-код с другого вашего устройства, нажав "Загрузить личный ключ" -> "QR-код".</string>
+    <string name="error_incorrect_login_owner">Ваш логин не соответствует импортированному личному ключу.</string>
+    <string name="err_change_download_folder">Папка для загрузки файлов не может быть создана. Пожалуйста, выберите существующую папку и попросите отправителя файла повторить пересылку.</string>
+    <string name="title_file_write_err">Ошибка записи файла</string>
+    <string name="title_activity_chat_info">Информация</string>
+    <string name="error_incorrect_credentials">Ваш пароль не соответствует введенному логину.</string>
+    <string name="error_key_used">Этот личный ключ уже использован другим пользователем. Пожалуйста, зарегистрируйтесь как новый пользователь, чтобы сгенерировать новый ключ.</string>
+    <string name="error_name_used">Такой логин уже занят</string>
+    <string name="info_export">Личный ключ нужен для доступа к вашему аккаунту с другого устройства, либо после переустановки приложения.\n Вы можете експортировать его позже через меню приложения.</string>
+    <string name="btn_change_folder">Изменить папку</string>
+    <string name="export_private_key">экспортировать личный ключ</string>
+    <string name="info_file_choose_canceled">Выбор папки отменен</string>
+    <string name="hint_login">Только латинские буквы и цифры, символы \"-\", \"_\" и пробелы. Длина от 3 до 30 символов.</string>
+    <string name="hint_password_properties">
+        - Hе менее одной строчной буквы, одной прописной буквы и одной цифры;\n
+        - не должен содержать пробелов;\n
+        - от 8 до 20 символов.</string>
+    <string name="alert_remember_pass_keys">Пожалуйста, запомните свой пароль и в случае необходимости сохраните личный ключ.\n Пароль и личный ключ восстановлению не подлежат.</string>
+    <string name="btn_back">Назад</string>
+    <string name="remember_your_password_and_keys">Запомните пароль и ключ</string>
+    <string name="action_send_picture">Отправить изображение</string>
+    <string name="service_invite">%1$s пригласил %2$s в чат</string>
+    <string name="service_leave">%s покинул чат </string>
+</resources>

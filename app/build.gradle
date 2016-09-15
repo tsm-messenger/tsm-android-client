@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    dexOptions {
+//        used for multidex mode if there are too much methods in app
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+
+
+    defaultConfig {
+        applicationId 'com.tsm_messenger'
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 10005021
+        versionName '1.0.5.21'
+        buildConfigField "String", "appVersionName", "\"$versionName\""
+        buildConfigField "String", "StoragePath", '"/tsm"'
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'rebel.xml'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    productFlavors {
+
+        serverProduction {
+            buildConfigField "String", "CONNECT_STRING", "\"server2.tsm-messenger.com\""
+            buildConfigField "int", "CONNECT_PORT", "443"
+            buildConfigField "String", "BALANCER_URL", '"http://server2.tsm-messenger.com"'
+            buildConfigField "String", "BALANCER2_URL", '"http://server1.tsm-messenger.com"'
+            buildConfigField "String", "BALANCER_PORT", '"80"'
+            buildConfigField "String", "REGISTRATION_PORT", '"80"'
+//            buildConfigField "String", "ACRA_SERVER", "\" http://82.117.234.6:5984/acra-tutus/_design/acra-storage/_update/report\""
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files( 'libs/tsm-helper-1.0.5.9.jar' )
+    compile group: 'net.i2p.crypto', name: 'eddsa', version: '0.1.0'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.9'
+
+    compile project(':tsm_scanner')
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.3'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'org.bouncycastle:bcprov-jdk15on:1.51'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}

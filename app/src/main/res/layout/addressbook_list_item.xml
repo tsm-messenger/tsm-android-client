@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    <CheckBox
+        style="@style/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/view_min_margin"
+        android:id="@+id/tv_item_selected"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tvAvatar"
+        style="@style/lblAva"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="@dimen/view_min_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_item_online"
+        android:layout_gravity="center"
+        android:background="@drawable/status_offline" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/plainText_padding"
+            android:id="@+id/tv_item_addressBook_Name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_addressBook_Phone"
+            android:padding="@dimen/plainText_padding"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

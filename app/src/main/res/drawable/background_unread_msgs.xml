@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:innerRadius="@dimen/btn_info_listitem_sideLength"
+    android:thickness="@dimen/view_min_margin">
+
+    <solid android:color="@color/colorAccent"/>
+
+</shape>

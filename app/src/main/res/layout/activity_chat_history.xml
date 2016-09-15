@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tsm_messenger.activities.main.chat.ChatHistoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBack_toolbar"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                android:id="@+id/tv_online_state"
+                android:layout_width="@dimen/tbOnline_sideLength"
+                android:layout_height="@dimen/tbOnline_sideLength"
+                android:layout_margin="@dimen/view_min_margin"
+                android:textSize="@dimen/imgAvatar_textSize"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:background="@drawable/status_offline_header" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbl_new_msgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="@dimen/view_min_margin"
+            android:text="@string/lbl_new_msgs_in_chat"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lvChatHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/lvInputMessageBlock"
+            style="@style/h1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/view_min_margin">
+
+            <EditText
+                android:id="@+id/tbMessage"
+                style="@style/textBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_min_margin"
+                android:layout_marginRight="@dimen/view_min_margin"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:hint="@string/hint_write_message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxHeight="@dimen/tb_polyline_maxHeight"
+                android:minHeight="@dimen/tb_one_line_height"
+                android:singleLine="false"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSendMessage"
+                    style="@style/btn_header_word"
+                    android:layout_width="@dimen/tb_one_line_height"
+                    android:layout_height="@dimen/tb_one_line_height"
+                    android:layout_gravity="center_horizontal|top"
+                    android:onClick="btnSendMessage_onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_send_white_24dp"
+                    android:textSize="@dimen/h1_textSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

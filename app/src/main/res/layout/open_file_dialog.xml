@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ofd_mainLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ofd_title"
+        style="@style/h1"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/h1_height"
+        android:textSize="@dimen/h3_textSize"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ofd_up"
+            android:layout_width="@dimen/btn_lowerMenu_side_length"
+            android:layout_height="@dimen/btn_lowerMenu_side_length"
+            android:background="@android:drawable/ic_menu_directions"/>
+
+    </FrameLayout>
+
+
+    <ListView
+        android:id="@+id/ofd_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:paddingTop="@dimen/view_min_margin"
+        android:paddingBottom="@dimen/view_min_margin">
+
+        <Button
+            android:id="@+id/ofd_cancel"
+            style="@style/btn_dialog"
+            android:layout_weight="1"
+            android:text="@string/btn_cancel"/>
+
+        <Button
+            android:id="@+id/ofd_ok"
+            style="@style/btn_dialog"
+            android:layout_weight="1"
+            android:text="@string/btn_ok"/>
+
+    </LinearLayout>
+
+</LinearLayout>

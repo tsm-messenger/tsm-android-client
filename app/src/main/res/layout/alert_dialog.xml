@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:minHeight="@dimen/dialog_min_height"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/lblTitle_dialog"
+        style="@style/h1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/h1_height"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/img_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblMessage_dialog"
+            style="@style/lblBig"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="start"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lvList_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_show_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:enabled="false"
+        android:gravity="left"
+        android:textColor="@color/sky_blue"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvList2_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tbPhoneInput_dialog"
+        style="@style/textBox"
+        android:layout_marginBottom="@dimen/view_min_margin"
+        android:inputType="phone"
+        android:maxLength="30"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/horisontalSeparator_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/grey"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/llButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialog_left"
+            style="@style/btn_dialog"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnDialog_middle"
+            style="@style/btn_dialog"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="0dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnDialog_right"
+            style="@style/btn_dialog"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

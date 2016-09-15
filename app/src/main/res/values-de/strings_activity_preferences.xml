@@ -1,0 +1,7 @@
+<resources>
+    <!-- Strings related to Settings -->
+
+    <!-- General settings-->
+    <string name="pref_header_general">General</string>
+
+</resources>

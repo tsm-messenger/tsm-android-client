@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="appVersion"
+        android:title="@string/lbl_version" />
+
+    <Preference
+        android:key="user_nickname"
+        android:title="@string/lbl_login" />
+
+</PreferenceScreen>

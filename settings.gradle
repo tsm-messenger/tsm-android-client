@@ -1,0 +1,3 @@
+include ':app', ':tsm_scanner'
+
+

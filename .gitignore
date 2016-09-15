@@ -1,0 +1,11 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+*.iml
+nots01_messenger_android4.iml
+tutus-client.iml
+app.iml
+/app/app.iml
+.sonar

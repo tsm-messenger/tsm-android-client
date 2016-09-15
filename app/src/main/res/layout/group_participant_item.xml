@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/contactInfo_tv_onlineStatus"
+        android:layout_width="@dimen/tbOnline_sideLength"
+        android:layout_height="@dimen/tbOnline_sideLength"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/status_online"
+        android:layout_marginLeft="@dimen/view_min_margin"
+        android:layout_marginRight="@dimen/view_min_margin"
+        android:layout_marginTop="@dimen/view_min_margin"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/contact_detail_item_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_min_margin"
+            android:layout_marginTop="@dimen/view_min_margin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/contact_detail_item_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_min_margin"
+            android:layout_marginBottom="@dimen/view_min_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/contactInfo_btn_editName"
+        android:layout_width="@dimen/btn_info_listitem_sideLength"
+        android:layout_height="@dimen/btn_info_listitem_sideLength"
+        android:layout_gravity="center_vertical"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_info_outline_black_24dp"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="@dimen/view_min_margin"
+        android:layout_marginRight="@dimen/view_min_margin"
+        android:layout_marginTop="@dimen/view_min_margin"/>
+</LinearLayout>

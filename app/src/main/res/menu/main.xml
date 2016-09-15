@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tsm_messenger.activities.main.MainActivity">
+
+    <item
+        android:id="@+id/action_add_contact"
+        android:icon="@drawable/ic_person_add_white_24dp"
+        android:title="@string/title_add_contact"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/title_find"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_create_group_chat"
+        android:icon="@drawable/ic_chat_white_24dp"
+        android:title="@string/title_create_group_chat"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_downloads"
+        android:title="@string/lbl_downloads"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export_user_key"
+        android:orderInCategory="100"
+        android:title="@string/action_export_user_key_condensed"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_info_outline_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_info"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_deleteaccount"
+        android:orderInCategory="100"
+        android:title="@string/action_delete_account_condensed"
+        app:showAsAction="never"/>
+</menu>

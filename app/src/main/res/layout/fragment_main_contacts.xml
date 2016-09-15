@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/btn_header_word"
+            android:textColor="@color/light_blue"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/view_min_margin"
+            android:paddingRight="@dimen/h1_textSize"
+            android:id="@+id/btnCategory"
+            android:text="@string/btn_category_all"
+            android:textSize="@dimen/h2_textSize"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical">
+
+            <requestFocus />
+
+        </Button>
+
+        <ImageView
+            android:layout_width="@dimen/h3_textSize"
+            android:layout_height="@dimen/h3_textSize"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/view_min_margin"
+            android:src="@drawable/details" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listRegistered"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:divider="@color/transparent" />
+
+</LinearLayout>
+
+
+
+
+
+
+

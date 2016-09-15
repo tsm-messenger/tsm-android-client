@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- application-specific identifiers -->
+    <string name="app_name">TSM</string>
+
+    <!--Menu items-->
+    <string name="action_settings">Settings</string>
+    <string name="action_info">Info</string>
+    <string name="action_delete_account">Delete own account permanently</string>
+
+    <!-- labels -->
+    <string name="lbl_internal_memory">Internal memory</string>
+    <string name="lbl_new_contact">New Contact</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_progress_wait">Please wait</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_add_to_contacts">Add to contacts</string>
+    <string name="lbl_unread_messages">new messages</string>
+    <string name="lbl_version">Version</string>
+    <string name="hint_enter_login">Login</string>
+    <string name="hint_enter_password">Personal password</string>
+    <string name="hint_contact_name">Contact Name</string>
+    <string name="hint_contact_login">Contact login*</string>
+    <string name="hint_write_message">Write a message here</string>
+    <string name="lbl_new_msgs_in_chat">New messages in this chat</string>
+    <string name="lbl_accept_term_of_use">Accept </string>
+    <string name="lbl_term_of_use">You must accept the<u><font color='blue'> Terms of Use </font></u>  for further using of TSM </string>
+    <!-- button names -->
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_category_all">All</string>
+    <string name="btn_category_confirm">Confirm</string>
+    <string name="btn_category_confirm_in">Invitations from Members</string>
+    <string name="btn_category_confirm_out">Invitations to Members</string>
+    <string name="btn_category_confirm_wait">Waiting requests</string>
+    <string name="btn_category_invitation_ready">Sent invitations</string>
+    <string name="btn_category_invitation_todo">Can be invited</string>
+    <string name="btn_category_messenger">Messenger</string>
+    <string name="btn_chats">Chats</string>
+    <string name="btn_contacts">Contacts</string>
+    <string name="title_remove_from_contacts">Remove from contacts</string>
+    <string name="btn_leave_chat">Leave chat</string>
+    <string name="btn_not_to_share">Do not share</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_request_contact">Request contact</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_close_tsm">Close TSM</string>
+    <string name="btn_import_now">Import </string>
+    <string name="btn_not_import">Do not import</string>
+    <string name="title_error">ERROR</string>
+    <string name="title_invalid_password">Invalid password</string>
+    <string name="title_rename">Rename</string>
+    <string name="title_scan_error">Scan Error!</string>
+    <string name="title_app_locked">TSM is locked</string>
+    <string name="title_export">Private key is exported</string>
+    <string name="title_import">Import private key</string>
+    <string name="title_success">Success</string>
+
+    <!--info messages-->
+    <string name="info_asks_share_contacts">asks you to share contacts</string>
+    <string name="info_user_capital">User</string>
+    <string name="info_export">Private key is used to log in with your account at other devices, or to restore it after uninstalling the App.\n You can export it later via application menu.</string>
+    <string name="info_operation_done_success">Operation was done successfully!</string>
+    <string name="info_delete_account">Do you really want to delete your account permanently?</string>
+
+    <!-- error messages -->
+    <string name="error_access_denied">Access denied</string>
+    <string name="error_empty_name_field">Login field should be filled.</string>
+    <string name="error_group_chat_member_count">You need select more then one user.</string>
+    <string name="error_login_owner">You can not enter your own login</string>
+    <string name="error_request_member_count">You need to select contact for request.</string>
+    <string name="error_group_member_limit">Group-Chat is limited to max. %d Members</string>
+    <string name="error_invalid_login">The provided login should have only latin letters and numbers, symbols "-", "_" and spaces. It should have length from 3 to 30 symbols.</string>
+    <string name="error_login_already_exists">This login already exists.</string>
+
+    <string name="error_password_properties">Your password should contain:\n
+        - from 8 to 20 symbols;\n
+        - at least one lowercase letter, one uppercase letter and one digit;\n
+        - no space characters.</string>
+    <string name="error_password_problems">Correct your password:</string>
+    <string name="error_password_invalid_length">– make it from 8 to 20 symbols length</string>
+    <string name="error_password_no_lowercase_found">– insert at least one lowercase letter</string>
+    <string name="error_password_no_uppercase_found">– insert at least one uppercase letter</string>
+    <string name="error_password_no_digit_found">– insert at least one digit</string>
+    <string name="error_password_space_symbol_found">– remove all space symbols</string>
+    <string name="error_password_validate">Password validation failed!\nApplication will be locked for some period if wrong password is provided 10 times in a row.\nYou have %s to enter correct password.</string>
+    <string name="error_qr_scan">QR code scan failed!\nApplication will be locked for some period if wrong QR code is provided 3 times in a row.\nYou have %d attempts to scan a valid QR code.</string>
+    <string name="error_app_becomes_locked">Application is locked!\n\nYou will not have access to your TSM for a minute. Please wait.</string>
+    <string name="error_smth_wrong">Sorry, but something was wrong. Please try again.</string>
+    <string name="error_user_not_registered_notary">Sorry, but such user cannot be added to your address book. User may be not registered on Notary Server or may have no TSM apps registered.</string>
+    <string name="error_app_locked">Sorry, app cannot be launched now. It will be unlocked in a minute. Please wait.</string>
+    <string name="error_import_file_read">There was an error while reading key from file. Retry?</string>
+    <string name="error_user_private_key_invalid">Sorry, your private user key was already created. Please import it.</string>
+    <string name="error_notary_unavailable">Sorry, but Notary Server is temporary unavailable. Please try again later.</string>
+    <string name="error_transact_processing">Sorry, but something went wrong when processing your request. Please try again later.</string>
+    <string name="error_login_outdated">Sorry, but there are no active users with such credentials. Please check login you entered.</string>
+    <string name="error_low_version">You have an old version of TSM. Please update it and try again.</string>
+    <string name="error_too_many_participants">The number of participants exceeds the limit.</string>
+    <string name="error_chat_has_not_have_history">This chat doesn\'t have history.</string>
+
+    <string name="error_file_transfer_offline_session_not_init">Sorry, session is not initiated. Please connect the server to receive session key.</string>
+    <string name="error_file_transfer_empty_file">Sorry, You can not send empty file  </string>
+
+    <string name="error_user_unreachable">User has no free keys to encrypt messages.</string>
+    <string name="error_chat_unreachable">No participants have free keys to encrypt messages.</string>
+
+    <string name="alarm_title">Security alarm</string>
+    <string name="alarm_owner_key">Owner\'s  key validation failed </string>
+    <string name="alarm_participant_key">Participant\'s  key validation failed </string>
+    <!--notification-->
+
+    <string name="notification_new_messages"> You have new messages </string>
+    <string name="notification_messages_sent"> Offline messages </string>
+    <string name="notification_new_messages_in_chat"> You have %d messages in  </string>
+    <string name="notification_new_messages_has_been_sent"> Your message has been sent in  </string>
+    <string name="notification_new_contact_request"> You have new contactRequest </string>
+    <string name="notification_new_answer_title">You received answer for a request</string>
+    <string name="notification_new_answer_accept"> %s accepted your request </string>
+    <string name="notification_new_answer_decline"> %s declined your request </string>
+    <string name="notification_new_inform">Contact has  installed TSM</string>
+    <string name="notification_connection_lost"> Server connection lost </string>
+    <string name="notification_message_queue">Waiting for response from server.</string>
+    <string name="notification_file">File saved.</string>
+    <string name="notification_deleterelation_title">You were deleted from a contact list</string>
+    <string name="notification_deleterelation_detail">User %s removed you from his contacts list.</string>
+
+    <string name="notification_title_new_messages">message</string>
+    <string name="notification_title_inform">information</string>
+    <string name="notification_title_connection">connection</string>
+    <string name="notification_title_queue">message queue</string>
+    <string name="notification_title_request">contact request</string>
+    <string name="notification_title_file">File transfer</string>
+
+    <string name="title_choose_export_mode">Select export mode</string>
+    <string name="lbl_text_file">Text file</string>
+    <string name="lbl_qr_code">QR-code</string>
+    <string name="title_choose_import_mode">Select import mode</string>
+    <string name="info_import_canceled">Import operation was canceled. Retry?</string>
+    <string name="error_import_scan">There was an error while reading key from QR-code. Retry?</string>
+    <string name="title_keystore_locked">Keystore is locked</string>
+    <string name="error_keystore_locked">Sorry, your keystore is locked or not activated. TSM needs unlocked keystore to save data securely.\nTo activate your keystore please set \"Lock screen\" parameter in your phone settings to \"Pattern\", \"Pin\" or \"Password\".\nAfter you unlock your keystore, TSM can be launched normally.</string>
+    <string name="btn_unlock_keystore">Unlock keystore</string>
+    <string name="btn_reset_keystore">Reset keystore</string>
+
+    <!--unsorted-->
+    <string name="lbl_attempt_1">attempt</string>
+    <string name="lbl_attempt_2_4">attempts</string>
+    <string name="lbl_attempt_default">attempts</string>
+    <string name="lbl_remaining_default">there are</string>
+    <string name="title_search">Search</string>
+    <string name="message_mask_was_changed">Source mask was changed. Send request again.  </string>
+    <string name="btn_add_participants">Add participants</string>
+    <string name="btn_delete_relation">Break friendship relation</string>
+    <string name="error_add_no_participants">Sorry, you cannot add more participants to this chat.</string>
+    <string name="info_user_left">has left chat</string>
+    <string name="error_leave_chat_offline">You can not leave chat in offline mode. Please connect your device to the Internet.</string>
+    <string name="info_import_lost_key">Sorry, but your private user key is not stored in your keystore. Please import it again using your usual password.</string>
+    <string name="info_import_success">Encrypted private user key was imported successfully.</string>
+    <string name="error_chat_not_recognized_yet">Sorry, but chat info for this item is not loaded yet</string>
+    <string name="info_user_key_not_exist_at_transact">Your private key does not exist at TSM server. It will be generated and exported to a file.</string>
+    <string name="pref_title_vibrate_silent">Minimal period between vibration signals (sec)</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="title_add_contact">Add contact</string>
+    <string name="action_send_file_online">Send file online </string>
+    <string name="action_send_file_offline">Send file offline</string>
+    <string name="info_file_receive">New file from %1$s \nFile name: %2$s \nFile size: %3$s</string>
+    <string name="info_file_received">File %1$s  from  %2$s  downloaded.</string>
+    <string name="title_file_incoming">Receive file?</string>
+    <string name="title_file_transfer">File transfer</string>
+    <string name="config_download_folder" translatable="false">/storage/emulated/0/Download/TSM_downloads</string>
+    <string name="pref_title_download_folder">Download file folder</string>
+    <string name="action_export_user_key">Export private user key</string>
+    <string name="action_export_user_key_condensed">Key export</string>
+    <string name="error_participant_offline">Sorry, but this user is offline now and he cannot receive your file in online mode. Please try again in offline mode.</string>
+    <string name="error_file_download">Sorry, file is corrupted. You can not download it .</string>
+    <string name="error_too_few_parameter">You can not write messages in this chat.</string>
+    <string name="error_request_not_found">You have already answered for this request from the other devise .</string>
+    <string name="error_user_already_online">Your account is already connected from other device.</string>
+    <string name="file_cancel_transfer">Do you want to cancel file transfer?</string>
+
+    <string name="pref_title_privatekey_show_time">Private key show time (sec)</string>
+    <string name="info_history_loaded">Chat history is loaded</string>
+    <string name="info_history_will_load">Chat history will be loaded soon</string>
+    <string name="title_user_key">Private user key</string>
+    <string name="info_userkey_show_time">User key is shown for %d seconds</string>
+    <string name="lbl_byte">B</string>
+    <string name="lbl_kbyte">KB</string>
+    <string name="lbl_mbyte">MB</string>
+    <string name="lbl_gbyte">GB</string>
+    <string name="lbl_tbyte">TB</string>
+    <string name="hint_no_active_participants">There are no participants now. Add users to chat.</string>
+    <string name="error_chat_create_offline">Sorry, you cannot create chat in offline mode</string>
+    <string name="error_chat_create_verify_key">Sorry, you cannot create chat without verified  keys. Try  again later.</string>
+    <string name="error_file_too_large">Sorry, but this file is too large to send.</string>
+    <string name="press_back_to_exit">Please click Back again to exit</string>
+    <string name="lbl_load_private_key">Load private key</string>
+    <string name="title_request_contacts">Request contact exchange</string>
+    <string name="title_find">Find</string>
+    <string name="title_create_group_chat">Create chat</string>
+    <string name="title_activity_choose_contacts">Choose contacts</string>
+    <string name="group_name">Chat name</string>
+    <string name="sequre_live_time">Max expectation time for delivery (minutes)</string>
+    <string name="title_activity_contact_info">Contact info</string>
+    <string name="title_load_history">Load chat history</string>
+    <string name="chat_info">Chat info</string>
+    <string name="notification_new_messages_in_some_chats">You have new Messages</string>
+    <string name="btn_decline">Decline request</string>
+    <string name="btn_accept_request">Accept request</string>
+    <string name="error_file_transfer_session_init_error">Sorry, session key for your file encryption was not created. Please try again later.</string>
+    <string name="lbl_offline">offline</string>
+    <string name="action_send_file">Send file</string>
+    <string name="info_delete_app_manually">/nPlease go to your device settings and delete TSM app</string>
+    <string name="title_break_relationships">Break relationships</string>
+    <string name="info_break_relationships">Do you want to break relationships with %s?</string>
+    <string name="title_request_sent">Contact request sent</string>
+    <string name="info_request_sent_concrete">Contact request for %s was sent successfully!</string>
+    <string name="title_requests_sent">Contact requests sent</string>
+    <string name="title_request_send_error">Contact request send error</string>
+    <string name="info_request_not_sent_concrete">Contact request was not sent to %s, because there are no active apps found.</string>
+    <string name="error_mask_too_short">Please enter at least 3 symbols to search for TSM users</string>
+    <string name="info_no_users_found">No users found</string>
+    <string name="info_only_lowercase">There should be only lowercase letters in login</string>
+    <string name="info_contact_not_connected">This person is not in connection with you. You can request contacts and wait for an answer to chat with this person.</string>
+    <string name="info_contact_requested">You have sent a contact request to this person. Waiting for an answer.</string>
+    <string name="info_contact_pending">This person has sent a contact request to you. Please accept or reject it.</string>
+    <string name="info_contact_unreachable">This person has no keys for messaging available. Wait until person becomes online to chat.</string>
+    <string name="info_remove_from_contacts">Are you sure to remove this contact from your contacts list? The personal chat for this contact will be also removed.</string>
+    <string name="lbl_remaining_1">there are</string>
+    <string name="info_last_login_own_device">Your last login was: %s with current device</string>
+    <string name="info_last_login_other_device">Your last login was: %s with other device</string>
+    <string name="lbl_securetype_keep_until_delivery">Keep until delivery mode</string>
+    <string name="lbl_securetype_keep_until_lifetime">Keep until delivery mode (%s)</string>
+    <string name="lbl_securetype_keep_until_delivery_details">Message will be stored at server for a guaranteed delivery, but will be erased right after decrypting by all recipients. Only online file transfer mode is available.</string>
+    <string name="lbl_securetype_nothing_keep">Keep nothing</string>
+    <string name="lbl_securetype_nothing_keep_details">Messages will be transferred only to online users and are never stored at server.  Only online file transfer mode is available.</string>
+    <string name="lbl_securetype_all_history_keep">Keep all history</string>
+    <string name="lbl_securetype_all_history_keep_details">Messages are sent with a guaranteed delivery. You can also request all chat history stored encrypted at server. Both online and offline file send modes are available.</string>
+    <string name="error_chat_member_count">You need to select at least one user for chat.</string>
+    <string name="title_info">Info</string>
+    <string name="action_delete_account_condensed">Delete account</string>
+    <string name="action_delete_chat">Delete chat</string>
+    <string name="title_delete_chat">Delete chat?</string>
+    <string name="info_delete_chat_leave">If you delete this chat, you will automatically leave it. Chat history will be permanently deleted. Do you want to proceed?</string>
+    <string name="info_delete_chat">Chat history will be permanently deleted. Do you want to proceed?</string>
+    <string name="title_contact_request_pending">Contact request</string>
+    <string name="info_contact_request_pending">You have a new contact request</string>
+    <string name="lbl_request_from">request from </string>
+    <string name="error_user_already_in_contactbook">This user is already in your contactBook</string>
+    <string name="lbl_chat">chat:</string>
+    <string name="title_exit">Exit TSM</string>
+    <string name="info_exit_file_transfer">One or more files are transferred. Pause transferring and exit?</string>
+    <string name="lbl_empty_chat">empty chat</string>
+    <string name="lbl_securetype_keep_until_lifetime_details">Message will be stored at server for %s , but will be erased right after decrypting by all recipients. Only online file transfer mode is available.</string>
+    <string name="lbl_sdcard">SD-card</string>
+    <string name="btn_new_user">New user</string>
+    <string name="btn_existing_user">Existing user</string>
+    <string name="error_sd_locked">SD card is not writable at your Android version</string>
+    <string name="info_contact_self_deleted">This person has deleted own account. You will never have a possibility to chat again.</string>
+
+
+    <string-array name="sequretype_array">
+        <item>Save history</item>
+        <item>Phantom talk</item>
+        <item>Delete from server after read</item>
+    </string-array>
+
+    <string-array name="timetype_array">
+        <item>minutes</item>
+        <item>hours</item>
+        <item>days</item>
+        <item>weeks</item>
+    </string-array>
+    <string name="lbl_check_password">Show password</string>
+    <string name="info_leave_chat">You will no longer be able to receive and send messages in this chat. Do you want to proceed?</string>
+    <string name="lbl_chat_setting">Chat settings</string>
+    <string name="lbl_securetype">Chat security settings:</string>
+    <string name="lbl_chat_participants">Chat participants:</string>
+    <string name="title_tsm_offline">TSM is offline</string>
+    <string name="error_offline_reg_impossible">Offline registration is impossible. Please connect to the Internet and start TSM again.</string>
+    <string name="btn_accept">Accept</string>
+    <string name="you_have">You have</string>
+    <string name="btn_details">Details</string>
+    <string name="lbl_downloads">Downloads</string>
+    <string name="lbl_sender">sender:</string>
+    <string name="lbl_size">size:</string>
+    <string name="lbl_open">Open</string>
+    <string name="lbl_delete">Delete</string>
+    <string name="info_file_deleted">File is deleted from file system.</string>
+    <string name="info_file_delete_error">Delete error. Maybe file is locked, moved or deleted earlier.</string>
+    <string name="error_no_actions">No actions available</string>
+
+
+    <!--  Server message error -->
+    <string name="APP_IS_NOT_REGISTERED" translatable="false">APP_IS_NOT_REGISTERED</string>
+    <string name="PUBLIC_KEY_IS_NOT_AVAILABLE" translatable="false">PUBLIC_KEY_IS_NOT_AVAILABLE</string>
+    <string name="JSON_INCORRECT" translatable="false">JSON_INCORRECT</string>
+    <string name="UNEXPECTED_ERROR" translatable="false">UNEXPECTED_ERROR</string>
+    <string name="BAD_CREDENTIALS" translatable="false">BAD_CREDENTIALS</string>
+    <string name="USER_ALREADY_REGISTERED" translatable="false">USER_ALREADY_REGISTERED</string>
+    <string name="CONFIRM_CODE_INCORRECT" translatable="false">CONFIRM_CODE_INCORRECT</string>
+    <string name="CONFIRM_CODE_EXPIRED" translatable="false">CONFIRM_CODE_EXPIRED</string>
+    <string name="CONFIRM_UNEXPECTED" translatable="false">CONFIRM_UNEXPECTED</string>
+    <string name="UNSUPPORTED_LANGUAGE" translatable="false">UNSUPPORTED_LANGUAGE</string>
+    <string name="USER_CONTACT_REGISTERED" translatable="false">USER_CONTACT_REGISTERED</string>
+    <string name="LOCATION_NOT_FOUND" translatable="false">LOCATION_NOT_FOUND</string>
+    <string name="CONTACT_ALREADY_CONFIRMED" translatable="false">CONTACT_ALREADY_CONFIRMED</string>
+    <string name="INVALID_MSISDN" translatable="false">INVALID_MSISDN</string>
+    <string name="APP_NOT_FOUND" translatable="false">APP_NOT_FOUND</string>
+    <string name="OS_NOT_FOUND" translatable="false">OS_NOT_FOUND</string>
+    <string name="USER_REGISTRATION_NOT_FOUND" translatable="false">USER_REGISTRATION_NOT_FOUND</string>
+    <string name="APP_NOT_REGISTERED" translatable="false">APP_NOT_REGISTERED</string>
+    <string name="UNSUPPORTED_APP_VERSION" translatable="false">UNSUPPORTED_APP_VERSION</string>
+    <string name="UNSUPPORTED_OS_VERSION" translatable="false">UNSUPPORTED_OS_VERSION</string>
+    <string name="USER_REGISTRATION_EXPIRED" translatable="false">USER_REGISTRATION_EXPIRED</string>
+    <string name="INVALID_EMAIL" translatable="false">INVALID_EMAIL</string>
+    <string name="VALIDATION_ERROR" translatable="false">VALIDATION_ERROR</string>
+    <string name="CHAT_NAME_NOT_FOUND" translatable="false">CHAT_NAME_NOT_FOUND</string>
+    <string name="BOUNDARIES_NOT_FOUND" translatable="false">BOUNDARIES_NOT_FOUND</string>
+    <string name="FILE_MODE_ERROR" translatable="false">FILE_MODE_ERROR</string>
+    <string name="FILE_ACCEPT_ERROR" translatable="false">FILE_ACCEPT_ERROR</string>
+    <string name="FILE_NOT_FOUND_ERROR" translatable="false">FILE_NOT_FOUND_ERROR</string>
+    <string name="FILE_SENDER_ONLINE_ERROR" translatable="false">FILE_SENDER_ONLINE_ERROR</string>
+    <string name="FILE_FINISHED" translatable="false">FILE_FINISHED</string>
+    <string name="LIMIT_NEED_RECORDS_NOT_RECOGNIZED" translatable="false">LIMIT_NEED_RECORDS_NOT_RECOGNIZED</string>
+    <string name="TOO_SHORT_WORD" translatable="false">TOO_SHORT_WORD</string>
+    <string name="WRONG_DATA" translatable="false">WRONG_DATA</string>
+    <string name="NONEXISTENT_DATA" translatable="false">NONEXISTENT_DATA</string>
+    <string name="CHAT_NOT_FOUND" translatable="false">CHAT_NOT_FOUND</string>
+    <string name="NOT_ALL_ARE_FRIENDS" translatable="false">NOT_ALL_ARE_FRIENDS</string>
+    <string name="SESSION_NOT_FOUND" translatable="false">SESSION_NOT_FOUND</string>
+    <string name="OPERATION_IS_NOT_ALLOWED" translatable="false">OPERATION_IS_NOT_ALLOWED</string>
+    <string name="CAN_NOT_REGISTER_USER" translatable="false">CAN_NOT_REGISTER_USER</string>
+    <string name="lbl_directory_not_exist">Current directory is deleted or not available</string>
+    <string name="contact_already_connected">You are already connected with this person</string>
+    <string name="lbl_last_changed">last changed: %s</string>
+    <string name="file_select_canceled">File selection canceled</string>
+    <string name="file_folder">File folder</string>
+    <string name="empty_folder">Empty folder</string>
+    <string name="btn_next">Next</string>
+    <string name="info_load_key">You need to import your private user key. \n\n It can be exported from your existing application as a file. You can import it by pressing "Load key" -> "Text file". \n\n
+    You can also import your key from your other active app by pressing "Load key" -> "QR code".</string>
+    <string name="error_incorrect_login_owner">Your login doesn\'t match the provided private key.</string>
+    <string name="title_file_write_err">Error writing a file</string>
+    <string name="err_change_download_folder">A new download folder cannot be created. Please select an existing folder and ask file sender to send it again.</string>
+    <string name="title_activity_chat_info">Chat info</string>
+    <string name="error_name_used">Login is used</string>
+    <string name="error_incorrect_credentials">Your password doesn\'t match the provided login.</string>
+    <string name="error_key_used">This private user key is already used by other user. Please register as a new user to generate new key.</string>
+    <string name="export_private_key">export private user key</string>
+    <string name="btn_change_folder">Change folder</string>
+    <string name="info_file_choose_canceled">Folder selection was canceled</string>
+    <string name="remember_your_password_and_keys">Remember your password and keys</string>
+    <string name="alert_remember_pass_keys">Please remember your password and save your private key if needed.\n Your password and your private key cannot be recovered.</string>
+    <string name="btn_back">Back</string>
+    <string name="hint_login">Only latin letters and numbers, symbols \"-\", \"_\" and spaces. Length from 3 to 30 symbols.</string>
+    <string name="hint_password_properties">
+        - At least one lowercase letter, one uppercase letter and one digit;\n
+        - no space characters;\n
+        - from 8 to 20 symbols. </string>
+    <string name="service_leave">%s has left the chat</string>
+    <string name="service_invite">%1$s invited %2$s to the chat</string>
+
+
+</resources>

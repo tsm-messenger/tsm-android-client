@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tsm_messenger.activities.registration.TsmSignInActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBack_toolbar"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:background="@color/transparent"
+                android:onClick="backPressManual"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/reg_login"
+                    style="@style/textBox"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                abcdefghijklmnopqrstuvwxyz0123456789-_. "
+                    android:hint="@string/hint_enter_login"
+                    android:inputType="textNoSuggestions" />
+
+                <TextView
+                    android:id="@+id/tv_login_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_login"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/grey_6"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    style="@style/textBox"
+                    android:ems="10"
+                    android:hint="@string/hint_enter_password"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/chbCheckPin"
+                    style="@style/checkBox_tb"
+                    android:text="@string/lbl_check_password" />
+
+                <TextView
+                    android:id="@+id/tv_pass_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:text="@string/hint_password_properties"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/grey_6"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <CheckBox
+                        android:id="@+id/chbExportKey"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:checked="true"
+                        android:text="@string/export_private_key"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_securetype_info"
+                        android:layout_width="@dimen/btn_info_listitem_sideLength"
+                        android:layout_height="@dimen/btn_info_listitem_sideLength"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:visibility="gone"
+                        android:onClick="btnKeyExportDetails_onClick"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_info_outline_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                    <ImageButton
+                        android:id="@+id/btnChangeFolder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_folder_orange_24dp"
+                        android:allowUndo="false"
+                        android:onClick="btnChangeFolder_onClick"
+                        android:layout_marginRight="@dimen/view_min_margin"
+                        android:layout_marginLeft="@dimen/view_min_margin"
+                        android:visibility="gone"
+                        android:text="@string/btn_change_folder" />
+
+                    <TextView
+                        android:id="@+id/tvExportFolder"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:text="storage/emulated/0/tsm"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_vertical_margin" />
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    style="@style/button"
+                    android:allowUndo="false"
+                    android:onClick="btnConClickSignUp"
+                    android:text="@string/btn_register" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7" />
+
+    </LinearLayout>
+
+</LinearLayout>

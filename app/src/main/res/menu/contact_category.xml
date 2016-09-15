@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_category_all"
+        android:title="@string/btn_category_all"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/menu_category_messenger"
+        android:title="@string/btn_category_messenger"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/menu_category_confirm"
+        android:title="@string/btn_category_confirm"
+        android:orderInCategory="100" />
+    <!--<item-->
+        <!--android:id="@+id/menu_category_invitation"-->
+        <!--android:title="@string/btn_category_invitation"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:showAsAction="never" />-->
+</menu>
